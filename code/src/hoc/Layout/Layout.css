@@ -1,0 +1,12 @@
+.Layout {
+    padding: 1em;
+}
+
+.Content {
+    display: flex;
+}
+
+.Content > div {
+    background-color: #fff;
+    margin: 2em 5px;
+}

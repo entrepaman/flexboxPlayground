@@ -1,0 +1,22 @@
+.ViewerCont {
+    flex-grow: 1;
+    min-height: 700px;
+}
+
+.Parent {
+    display: flex;
+}
+
+.Child {
+    background: #1e84c2;
+    margin: 7px;
+    padding: 4px 9px;
+    width: 10%;
+    height: 100px;
+    display: flex;
+    align-items: center;
+}
+
+.Child p {
+    width: 100%;
+}

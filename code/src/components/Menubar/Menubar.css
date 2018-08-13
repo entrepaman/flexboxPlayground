@@ -1,9 +1,18 @@
+.Menubar {
+    text-align: left;
+    padding: 0 1em;
+}
+
 .Menubar img {
-    width: 60px;
+    width: 30px;
+    position: relative;
+    left: -8px;
+    top: 5px;
 }
 
 .Menubar p {
     color: #fff;
-    font-size: 3rem;
+    font-size: 2.3rem;
     margin: 0;
+    display: inline-block;
 }

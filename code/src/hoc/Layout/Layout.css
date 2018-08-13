@@ -8,5 +8,6 @@
 
 .Content > div {
     background-color: #fff;
-    margin: 2em 5px;
+    margin: 0px 5px;
+    margin-top: 15px;
 }

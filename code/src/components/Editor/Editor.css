@@ -10,47 +10,72 @@
     font-size: 1.2rem;
 }
 
-.Editor > div {
+.Editor > .EditorPane {
     background-color: #362f2d;
-    padding: 5px 0 12px 20px;
+    padding: 5px 7px 12px 7px;
     color: #fff;
+    min-width: 250px;
+    overflow-x: scroll;
 }
 
-.Editor > div > p {
+.Editor > .EditorPane > p {
     margin: 8px 0px 2px 0px;
     color: #ffbb49;
 }
 
-.Editor > div > p > span {
+.Editor > .EditorPane > p > span {
     margin-left: 5px;
 }
 
-.Code > div {
+.Code > .Row {
     display: flex;
     padding-left: 2em;
-    margin: 1.6em 0;
+    flex-direction: row;
+    align-items: baseline;
+    background-color: rgba(63, 56, 55, 0.4);
+    margin: 6px 9px 0 9px;
 }
 
-.Code > div > div.attr {
-    flex-grow: 0.5;
+.Code > .Row > div {
+    width: 100px;
+}
+
+.Code > .Row p {
+    margin: 6px 0;
+}
+
+.Code > .Row input {
+    width: 65px;
+    height: 25px;
+    font-family: 'Exo 2', sans-serif;
+    font-weight: 700;
+    text-align: center;
+    outline: none;
+    border: none;
+    margin-right: 1em;
+}
+
+.Code > .Row > .attr {
+    flex-grow: 0.1;
     color: #b2ccd6;
 }
 
-.Code > div > div.val {
+.Code > .Row > .val {
     flex-grow: 1;
     color: #F78555;
+    display: flex;
 }
 
-.Code > div > div > p {
-    margin: -7px 0;
+.RadioCont {
+    margin-right: 4em;
 }
 
-.Code > div > div > p > label {
+.RadioCont label {
     position: relative;
     left: 1.5em;
 }
 
-.Code > div > div > p > input[type=radio] {
+.RadioCont input[type=radio] {
     position: absolute;
     visibility: hidden;
 }
@@ -64,7 +89,8 @@
     width: 7px;
     transition: border .25s linear;
     z-index: 5;
-    top: -14px;
+    top: -17px;
+    left: 3px;
 }
 
 .Check:before {
@@ -77,6 +103,7 @@
     margin: auto;
     transition: background 0.25s linear;
 }
+
 input[type=radio]:checked ~ .Check {
     border: 5px solid #fff;
 }
@@ -89,6 +116,15 @@ input[type=radio]:checked ~ label {
     color: #fff;
 }
 
-.Inside {
+.ClearButton {
+    border: none;
+    background-color: #fff;
+    padding: 0px 10px;
+    position: relative;
+    top: -3px;
+    cursor: pointer;
+}
 
+.ClearButton:hover {
+    background-color: coral;
 }
